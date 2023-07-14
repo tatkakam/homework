@@ -1,0 +1,1 @@
+   0 mkdir -p /home/humans /home/animals/cats /home/animals/dogs /home/animals/fish && touch /home/animals/cats/garfield.txt /home/animals/dogs/pluto.txt /home/animals/fish/nemo.txt /tmp/adam.txt /tmp/evA.txt && cp /tmp/adam.txt /home/humans && mv /tmp/evA.txt /opt/eve.txt && mv /opt/eve.txt /home/humans && ls /home/humans && history > hist_11_07.txt
