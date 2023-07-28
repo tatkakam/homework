@@ -1,0 +1,11 @@
+ 0 mkdir -p /tmp/hw3/newfile/tatakamenets && touch /tmp/hw3/newfile/tatakamenets/newfile.txt
+ 1 date +'%F' > /tmp/hw3/newfile/tatakamenets/newfile.txt
+ 2 echo "Homework3" >> /tmp/hw3/newfile/tatakamenets/newfile.txt
+ 3 df -h /
+ 4 df -h / | tail -1 | awk '{print $5}' >> /tmp/hw3/newfile/tatakamenets/newfile.txt
+ 5 history | tail -5 >> /tmp/hw3/newfile/tatakamenets/newfile.txt
+ 6 cat /tmp/hw3/newfile/tatakamenets/newfile.txt  
+ 7 cat /proc/cpuinfo
+ 8 cat cpuinfo | grep vendor /proc/cpuinfo >> /tmp/hw3/newfile/tatakamenets/newfile.txt
+ 9 cat /tmp/hw3/newfile/tatakamenets/newfile.txt
+10 history > hist_28_07.txt
