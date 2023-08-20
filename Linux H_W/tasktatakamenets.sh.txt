@@ -1,0 +1,6 @@
+#!/bin/bash
+        for i in {1..10}
+        do
+        touch /opt/260623_evening/tatakamenets/$i.20.08.23.txt
+        done
+ls -la /opt/260623_evening/tatakamenets/*.txt
