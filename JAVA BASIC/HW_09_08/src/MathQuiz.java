@@ -18,7 +18,6 @@ public class MathQuiz {
         String[] firstNames = new String[3];
         String[] lastNames = new String[3];
 
-
         for (int i = 0; i < 3; i++) {
             do {
                 System.out.print("Приветствуем вас, " + (i + 1) + "-й игрок! Вы участвуете в математическом Quiz'е. Введите ваши Имя Фамилия ");
@@ -69,7 +68,9 @@ public class MathQuiz {
                 System.out.println("Ваш ответ: " + userAnswer + ". Правильный ответ: " + correctAnswer + ". Текущее количество баллов: " + score);
                 scores[i] = score;
                 if (score < 100) {
-                    System.out.println(firstNames[i] + " " + lastNames[i] + "Ваш финальный счет: " + scores[i] + " баллов. Вы допустили ошибки, но принимаете участие в конкурсе. Удачи!");
+                    System.out.println(firstNames[i] + " " + lastNames[i] + " Ваш финальный счет: " + scores[i] + " баллов. Вы допустили ошибки, но принимаете участие в конкурсе. Удачи!");
+                    System.out.println();
+                    System.out.println();
                 } else {
                     System.out.println("Ура! Опросник завершён! " + firstNames[i] + " " + lastNames[i] + ", Вы победили!  Ваш финальный счет составил  максимальное количество: " + scores[i] + " баллов.");
                     System.out.println();
@@ -78,10 +79,9 @@ public class MathQuiz {
                 score = 0;
                 break;
             } while (correctAnswer != userAnswer);
-
         }
 
-        BubbleSortExample.bubbleSort(scores);
+        BubbleSortExample.bubbleSort(scores, firstNames, lastNames);
 
         System.out.println("По итогам опроса 3-х игроков получены следующие результаты: ");
         for (int i = 0; i < 3; i++) {
