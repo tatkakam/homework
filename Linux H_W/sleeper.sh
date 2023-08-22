@@ -9,7 +9,8 @@
 cat /proc/cpuinfo > /tmp/file.txt
 
 cat /etc/os-release | tail -6 | head -1 >> /tmp/file.txt
-cat /etc/os-release | tail -6 | head -1 | awk -F"=" '{print$2}' >> /tmp/file.txt
+
+cat /etc/os-release | tail -6 | head -1 | sed 's/NAME="//' | sed 's/Linux"//' >> /tmp/file.txt
 
 	for file in {50..100}
 	do
